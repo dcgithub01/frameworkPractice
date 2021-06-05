@@ -5,9 +5,10 @@
     <classes>
       <class name="com.dropbox.qa.tests.HomePageTest">
         <methods>
-          <include name="teardown"/>
-          <include name="setUp"/>
-          <include name="verifytitleTest"/>
+          <include name="createFolderTest" invocation-numbers="0"/>
+          <include name="homePageSetup"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.dropbox.qa.tests.HomePageTest -->
     </classes>

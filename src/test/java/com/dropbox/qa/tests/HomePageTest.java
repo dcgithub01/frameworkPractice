@@ -1,20 +1,34 @@
 package com.dropbox.qa.tests;
 
+import java.util.Properties;
+
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.qa.dropbox.base.BaseTest;
 import com.qa.dropbox.pages.HomePage;
 import com.qa.dropbox.utils.Constants;
+import com.qa.dropbox.utils.ExcelUtils;
 
 public class HomePageTest extends BaseTest {
 	HomePage hp;
+	ExcelUtils excelutil;
+
+	
 	@BeforeClass
 	public void homePageSetup()
 	{
 		
-	hp=	lp.doLogin("nancydhingra131@gmail.com", "nancy131");
+	hp=	lp.doLogin(prop.getProperty("username"), prop.getProperty("password"));
+	try {
+		Thread.sleep(3000);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+
 			}
 	
 	@Test(priority=1)
@@ -42,5 +56,18 @@ public class HomePageTest extends BaseTest {
 	{
 		hp.doClickLink();
 	}
+	
+	@DataProvider
+	public Object[][] datacreate() {
+		Object [][] data=ExcelUtils.getTestData(Constants.SHEET_NAME);
+		return data;
+	}
+	
+	@Test(priority=5,dataProvider="datacreate")
+	public void createFolderTest(String folderName,String AdditionalInvite, String permission)
+	{
+		hp.createFolder(folderName, AdditionalInvite, permission);
+	}
+	
 	
 }

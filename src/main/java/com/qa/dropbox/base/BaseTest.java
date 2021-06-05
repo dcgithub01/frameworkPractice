@@ -17,6 +17,7 @@ public class BaseTest {
 	public void setup()
 	{
 	 bp = new BasePage();
+	 prop=bp.init_prop();
 	driver=bp.init_driver(prop);
 	lp= new LoginPage(driver);
 

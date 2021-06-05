@@ -1,9 +1,14 @@
 package com.dropbox.qa.tests;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.qa.dropbox.base.BaseTest;
+import com.qa.dropbox.listeners.ExtentReportListener;
+import com.qa.dropbox.listeners.TestAllureListener;
+import com.qa.dropbox.listeners.TesultsListener;
+import com.qa.dropbox.listeners.pdfListener;
 import com.qa.dropbox.utils.Constants;
 
 public class LoginPageTest extends BaseTest {

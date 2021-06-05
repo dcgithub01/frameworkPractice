@@ -1,37 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10794" started-at="2021-05-23T12:32:25 IST" finished-at="2021-05-23T12:32:36 IST">
+  <suite name="Suite1" duration-ms="10394" started-at="2021-06-01T19:53:26 IST" finished-at="2021-06-01T19:53:36 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10794" started-at="2021-05-23T12:32:25 IST" finished-at="2021-05-23T12:32:36 IST">
-      <class name="com.dropbox.qa.tests.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.dropbox.qa.tests.HomePageTest@4973813a]" name="setUp" is-config="true" duration-ms="9809" started-at="2021-05-23T12:32:25 IST" finished-at="2021-05-23T12:32:35 IST">
+    <test name="BoxLoginLogout" duration-ms="10394" started-at="2021-06-01T19:53:26 IST" finished-at="2021-06-01T19:53:36 IST">
+      <class name="com.dropbox.qa.tests.LoginPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.dropbox.qa.tests.LoginPageTest@3eb7fc54]" name="setup" is-config="true" duration-ms="3697" started-at="2021-06-01T19:53:26 IST" finished-at="2021-06-01T19:53:30 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyHomePageTitleTest()[pri:1, instance:com.dropbox.qa.tests.HomePageTest@4973813a]" name="verifyHomePageTitleTest" duration-ms="18" started-at="2021-05-23T12:32:35 IST" finished-at="2021-05-23T12:32:35 IST">
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyLoginPageTitleTest()[pri:1, instance:com.dropbox.qa.tests.LoginPageTest@3eb7fc54]" name="verifyLoginPageTitleTest" duration-ms="98" started-at="2021-06-01T19:53:30 IST" finished-at="2021-06-01T19:53:30 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyHomePageTitleTest -->
-        <test-method status="PASS" signature="verifytitleTest()[pri:2, instance:com.dropbox.qa.tests.HomePageTest@4973813a]" name="verifytitleTest" duration-ms="56" started-at="2021-05-23T12:32:35 IST" finished-at="2021-05-23T12:32:35 IST">
+        </test-method> <!-- verifyLoginPageTitleTest -->
+        <test-method status="PASS" signature="verifyCreateAccountLinkTest()[pri:2, instance:com.dropbox.qa.tests.LoginPageTest@3eb7fc54]" name="verifyCreateAccountLinkTest" duration-ms="71" started-at="2021-06-01T19:53:30 IST" finished-at="2021-06-01T19:53:30 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifytitleTest -->
-        <test-method status="PASS" signature="verifyClickLinkTest()[pri:3, instance:com.dropbox.qa.tests.HomePageTest@4973813a]" name="verifyClickLinkTest" duration-ms="78" started-at="2021-05-23T12:32:35 IST" finished-at="2021-05-23T12:32:35 IST">
+        </test-method> <!-- verifyCreateAccountLinkTest -->
+        <test-method status="PASS" signature="signInTest()[pri:3, instance:com.dropbox.qa.tests.LoginPageTest@3eb7fc54]" name="signInTest" duration-ms="5518" started-at="2021-06-01T19:53:30 IST" finished-at="2021-06-01T19:53:36 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyClickLinkTest -->
-        <test-method status="PASS" signature="checkClickLink()[pri:4, instance:com.dropbox.qa.tests.HomePageTest@4973813a]" name="checkClickLink" duration-ms="86" started-at="2021-05-23T12:32:35 IST" finished-at="2021-05-23T12:32:35 IST">
+        </test-method> <!-- signInTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.dropbox.qa.tests.LoginPageTest@3eb7fc54]" name="tearDown" is-config="true" duration-ms="751" started-at="2021-06-01T19:53:36 IST" finished-at="2021-06-01T19:53:36 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkClickLink -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.dropbox.qa.tests.HomePageTest@4973813a]" name="teardown" is-config="true" duration-ms="702" started-at="2021-05-23T12:32:35 IST" finished-at="2021-05-23T12:32:36 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.dropbox.qa.tests.HomePageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.dropbox.qa.tests.LoginPageTest -->
+    </test> <!-- BoxLoginLogout -->
+  </suite> <!-- Suite1 -->
 </testng-results>

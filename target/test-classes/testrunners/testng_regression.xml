@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" thread-count="2" parallel="tests" verbose="3">
+<listeners>
+<!-- <listener class-name="com.qa.dropbox.listeners.ExtentReportListener"></listener> -->
+<!-- <listener class-name="com.qa.dropbox.listeners.pdfListener"></listener> -->
+<!-- <listener class-name="com.qa.dropbox.listeners.TestAllureListener"></listener> -->
+<!-- <listener class-name="com.qa.dropbox.listeners.TesultsListener"></listener> -->
+</listeners>
+	 <test name="BoxLoginLogout" preserve-order="true"  >
+	<parameter name="brower" value="chrome"></parameter>
+    <classes>
+		<class name="com.dropbox.qa.tests.LoginPageTest">
+		
+  </class>
+   </classes>
+   </test>
+   <!--  --> <test name="BoxhomePage" preserve-order="true">
+	
+    <classes>
+<!-- 		<class name="com.dropbox.qa.tests.HomePageTest"> -->
+		<!--  -->
+<!--   </class> -->
+   </classes>
+   </test>
+</suite>
