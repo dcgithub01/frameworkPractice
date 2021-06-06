@@ -3,9 +3,9 @@
 
 <suite name="Suite1" thread-count="2" parallel="tests" verbose="3">
 <listeners>
-<!-- <listener class-name="com.qa.dropbox.listeners.ExtentReportListener"></listener> -->
+ <listener class-name="com.qa.dropbox.listeners.ExtentReportListener"></listener>
 <!-- <listener class-name="com.qa.dropbox.listeners.pdfListener"></listener> -->
-<!-- <listener class-name="com.qa.dropbox.listeners.TestAllureListener"></listener> -->
+ <listener class-name="com.qa.dropbox.listeners.TestAllureListener"></listener>
 <!-- <listener class-name="com.qa.dropbox.listeners.TesultsListener"></listener> -->
 </listeners>
 	 <test name="BoxLoginLogout" preserve-order="true"  >
